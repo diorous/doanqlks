@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">QuanLyKhachSan</string>
+    <string name="txt_cmnd">CMND: %1$s</string>
+    <string name="txt_ho_ten">Họ và tên: %1$s</string>
+    <string name="txt_ngay_nhan">Ngày nhận: %1$s</string>
+    <string name="txt_ngay_tra">Ngày trả: %1$s</string>
+
+    <string name="txt_ten_phong">Tên phòng: %1$s</string>
+    <string name="txt_gia_tien">Giá tiền: %1$s đồng</string>
+    <string name="txt_phu_thu">Phụ thu: %1$s đồng</string>
+    <string name="txt_so_nguoi_toi_da">Số người tối đa trong phòng: %1$s</string>
+    <string name="txt_tinh_trang">Tình trạng: %1$s</string>
+
+    <string name="txt_ten_loai_phong">Loại phòng: %1$s</string>
+    <string name="txt_ma_loai_phong">Mã loại: %1$s</string>
+    <string name="txt_mo_ta">Mô tả: %1$s</string>
+    <string name="txt_don_gia">Đơn giá: %1$s</string>
+
+</resources>

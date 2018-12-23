@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatEditText;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -35,7 +34,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initFirebaseAuth();
-
+        firebaseAuth.signOut();
         btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(this);
         edtEmail = findViewById(R.id.edtEmail);
@@ -78,9 +77,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (!task.isSuccessful()) {
-                    Toast.makeText(LoginActivity.this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
-                } else {
-                    gotoMainScreen();
+                    Toast.makeText(LoginActivity.this, "Đăng nhập không thành công", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -95,17 +92,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if (user != null) {
-            //gotoMainScreen();
-        } else {
-
+            gotoMainScreen();
         }
     }
 
     @Override
     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
         Iterable<DataSnapshot> childrens = dataSnapshot.getChildren();
-        for (DataSnapshot snapshot:childrens) {
-            Log.d("kiemtra", snapshot.toString());
+        for (DataSnapshot snapshot : childrens) {
+
         }
     }
 

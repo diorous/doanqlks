@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login_activity"
+        android:orientation="vertical"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtTenPhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên phòng"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvAddLoaiPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="+ Loại phòng"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtSoNguoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số người"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtPhuThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phụ thu"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtDonGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Đơn giá"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Tình trạng phòng"
+                android:textColor="@color/colorWhite" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Mở"
+                    android:textColor="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/rdClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đóng"
+                    android:textColor="@color/colorWhite" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnTaoPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tạo danh mục phòng" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

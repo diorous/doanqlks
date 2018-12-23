@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login_activity"
+        android:orientation="vertical"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Họ và tên"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtCMND"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CMND"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtkhachNoiDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Khách nội địa"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtKhachNuocNgoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Khách nước ngoài"
+                android:inputType="number"
+                android:textSize="12dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/btnChooseRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=" + Chọn phòng"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/edtNgayNhanPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Ngày nhận"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/edtNgayTraPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Ngày trả"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnTaoPhieuDatPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tạo phiếu đặt phòng" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

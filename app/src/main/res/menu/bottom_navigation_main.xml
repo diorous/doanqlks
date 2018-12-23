@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/phieuThuePhong"
+        android:enabled="true"
+        android:title="Phiếu thuê phòng"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/danhMucPhong"
+        android:enabled="true"
+        android:title="Danh mục phòng"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/baoCao"
+        android:enabled="true"
+        android:title="Báo cáo hằng tháng"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/LapHoaDonThanhToan"
+        android:enabled="true"
+        android:title="Báo cáo hằng tháng"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/caidat"
+        android:enabled="true"
+        android:title="Cài đặt"
+        app:showAsAction="ifRoom"/>
+</menu>
