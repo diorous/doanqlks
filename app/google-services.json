@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "46744735224",
+    "firebase_url": "https://doanqlks-c86cd.firebaseio.com",
+    "project_id": "doanqlks-c86cd",
+    "storage_bucket": "doanqlks-c86cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46744735224:android:eb65e3c30ea82e6f",
+        "android_client_info": {
+          "package_name": "com.example.diorous.quanlykhachsan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46744735224-bb6qb0opmg2nfan41d8kco5edbv9ncdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diorous.quanlykhachsan",
+            "certificate_hash": "75feeee010718cbf0c1cecd30196f9d4e6b8def8"
+          }
+        },
+        {
+          "client_id": "46744735224-rok0omtenq93r0k0b3cidp59inroj49g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARObekW3K4uIgnqIIRKB4jwnPvX_4BZvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46744735224-rok0omtenq93r0k0b3cidp59inroj49g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
